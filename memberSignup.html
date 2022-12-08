@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>memberSignup</title>
+  <style>
+    .form{
+      width: 600px;
+      background-color: yellow;
+      margin: 15px auto;
+    }
+    .form-input{
+      margin: 0 0 20px 20px;
+    }
+    .form-control{
+      margin:10px 0 5px 0;
+    }
+    .form-content{
+      width: 330px;
+      margin: auto;
+    }
+    label{
+      color: darkslateblue;
+    }
+  </style>
+</head>
+<body>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post" class="form">
+
+  <h2 style="text-align: center; color: blue">ĐĂNG KÝ HỌC VIÊN</h2>
+  <div class="form-content">
+    <label>Họ tên </label>
+    <input type="text" name="name" class="form-input" style="width: 200px;"/> <br>
+    <label>Ngày sinh </label>
+    <input type="date" name="date" class="form-input" style="width: 200px;"/> <br>
+    <label>Email</label>
+    <input type="email" name="email" class="form-input"  /> <br>
+    <label>Số điện thoại</label>
+    <input type="text" name="phone" class="form-input"  /> <br>
+    <label>Giới tính</label>
+    <input type="radio" name="sex" id = "nam"><label for="nam">Nam</label>
+    <input type="radio" name="sex" id = "nữ"><label for="nữ">Nữ</label> <br>
+    <label>Địa chỉ</label>
+    <textarea name ="diachi" rows="3" cols="28"></textarea><br>
+    <label>Lớp</label>
+    <select>
+      <option selected>Chọn lớp</option>
+      <option>TH10482</option>
+      <option>TA10292</option>
+    </select><br>
+    <button type="submit" class="form-control">Đăng ký</button>
+    <button type="reset" class="form-control">Nhập lại</button>
+  </div>
+</form>
+</body>
+</html>
