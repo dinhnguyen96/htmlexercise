@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interesting Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .form{
+        width: 600px;
+        background-color: white;
+        margin: 15px auto;
+      }
+      .form-input{
+          margin: 0 0 20px 20px;
+      }
+      .content_value{
+          color: coral;
+      }
+      .hobby_title{
+          height: 100px;
+          float: left;
+          margin-right: 10px;
+      }
+      .form-control{
+          margin:10px 0 5px 0;
+      }
+      .form-content{
+          width: 330px;
+          margin: auto;
+      }
+    </style>
+</head>
+<body style="background-color: aqua">
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post" class="form">
+
+    <h2 style="text-align: center; color: white ;background-color: coral">SỞ THÍCH CỦA BẠN</h2>
+    <div class="form-content">
+            <label>Họ tên </label>
+            <input type="text" name="name" class="form-input" style="width: 200px;"/> <br>
+            <label>Email</label>
+            <input type="email" name="email" class="form-input"  /> <br>
+        <div class="hobby_title">
+            <label>Sở thích </label>
+        </div>
+        <input type="checkbox"  name="interest" width="100" id="thethao"/> <label class="content_value" for="thethao">Thể
+        thao</label>
+        <input type="checkbox"  name="interest" width="100" id="amnhac"/><label class="content_value" for="amnhac">Âm
+        nhạc</label>
+        <input type="checkbox" name="interest" width="100" id="docsach"/><label class="content_value" for="docsach">Đọc
+        sách</label><br>
+        <input type="checkbox"  name="interest" width="100" id="luotweb"/><label class="content_value" for="luotweb">Lướt
+        web</label>
+        <input type="checkbox"  name="interest" width="100" id="choigame"/><label class="content_value" for="choigame">Chơi
+        game</label>
+        <input type="checkbox"  name="interest" width="100" id="dienanh"/><label class="content_value" for="dienanh">Điện
+        ảnh</label><br>
+        <input type="checkbox"  name="interest" width="100" id="dulich"/><label class="content_value" for="dulich">Du
+        lịch </label><br>
+
+        <button type="submit" class="form-control">Gửi thông tin</button>
+        <button type="reset" class="form-control">Nhập lại</button>
+    </div>
+
+
+</form>
+</body>
+</html>
